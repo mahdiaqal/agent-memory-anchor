@@ -1,2 +1,1 @@
-{"name":"agent-memory-anchor","private":true,"type":"module","scripts":{"test":"node tests/model.mjs","check:surface":"node tests/source-surface.mjs"}}
-
+{"name":"agent-memory-anchor","private":true,"type":"module","scripts":{"test":"node tests/model.mjs","check:surface":"node tests/source-surface.mjs","deploy":"tsx scripts/deploy.ts","prove":"tsx scripts/prove.ts","verify":"tsx scripts/verify.ts"},"dependencies":{"genlayer-js":"1.1.8"},"devDependencies":{"@types/node":"25.9.3","tsx":"4.19.2","typescript":"5.9.3"}}
