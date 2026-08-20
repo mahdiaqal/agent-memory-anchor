@@ -1,0 +1,2 @@
+{"name":"agent-memory-anchor","private":true,"type":"module","scripts":{"test":"node tests/model.mjs","check:surface":"node tests/source-surface.mjs"}}
+

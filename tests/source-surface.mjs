@@ -1,0 +1,2 @@
+import{readdirSync,statSync}from'node:fs';import{join,relative}from'node:path';const r=new URL('..',import.meta.url).pathname.replace(/^\/(.:)/,'$1'),skip=new Set(['.git','node_modules','.tools','__pycache__']),f=[];function w(d){for(const n of readdirSync(d)){if(skip.has(n))continue;const p=join(d,n);statSync(p).isDirectory()?w(p):n.endsWith('.py')&&f.push(relative(r,p).replaceAll('\\','/'))}}w(r);if(f.length!==1||f[0]!=='contracts/AgentMemoryAnchor.py')throw Error(f.join(','));console.log('Source surface: one contract');
+
